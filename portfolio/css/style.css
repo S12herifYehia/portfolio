@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.landing .img{
+    width: 40%;
+    float: right;
+    margin: 65px 0px;
+
+}
+
+.landing .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-bottom: 5px solid gray;
+}
+
+.text{
+    width: 60%;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 0px 30px;
+}
+
+.text::-webkit-scrollbar{
+    width: 0;
+}
+
+.text  h1{
+    margin: 50px 0px;
+
+}
+
+.text p{
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+.text .social{
+    margin-left: 20px;
+
+}
+
+.text .social img{
+    margin-right: 5px;
+    cursor: pointer;
+    transition: 2s;
+}
+
+
+.text .social img:hover{
+    transform: rotate(350deg);
+}
+
+
+.services .main-heading{
+    margin: 20px 0px;
+}
+
+
+.services .box{
+
+display: flex;
+
+}
+.box .ser-box{
+width: 30%;
+transition: 0.6s;
+box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+margin-left: 30px;
+border-radius: 15px;
+
+}
+
+.box .ser-box img{
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+  
+
+}
+
+.box .ser-box:nth-child(2) img{
+    height: 159px;
+    border-bottom: 1px solid black;
+}
+
+.box .ser-box .text-box{
+   padding: 10px;
+   text-align: center;
+}
+
+
+.box .ser-box .text-box h3{
+    margin-bottom: 15px;
+}
+
+.box .ser-box:hover{
+    transform: scale(1.1);
+}
+
+/* Projects work */
+
+
+.projects .main-heading{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+
+.projects .pro-img img{
+width: 30%;
+margin: 10px;
+border: 1px solid black;
+padding: 5px;
+background-color: #dedede;
+
+
+}
+
+.projects .pro-img img:nth-child(5),
+.projects .pro-img img:nth-child(6){
+    margin-bottom: 10px;
+    height: 178px;
+}
+
+
+/* form */
+
+.contact{
+margin: 20px 0px 0px;
+}
+
+.contact .main-heading{
+    margin-bottom: 20px;
+
+}
+
+
+.contact form input{
+    padding: 8px 5px;
+    outline: none;
+    border: none;
+    background-color: rgb(214, 214, 214);
+    margin-right: 12px;
+    display: inline-block;
+    width: 48%;
+}
+
+/* .contact form input:invalid{
+    border:1px solid red;
+}
+*/
+
+/* .contact form input:valid{
+    border:1px solid green
+}  */
+
+.contact form input:focus{
+    border: 1px solid green;
+}
+
+
+
+
+/* .contact .inp-name input:nth-child(1),
+.contact .inp-name input:nth-child(2)
+ {
+ 
+    width: 48%;
+
+
+} */
+
+
+.contact .inp-em{
+    margin: 20px 0px;
+}
+
+
+.contact textarea{
+    margin: 20px 0px;
+    width: 98%;
+    height: 150px;
+    padding: 10px;
+    background-color: rgb(214, 214, 214);
+    border: none;
+
+}
+
+.contact form .submit{
+    padding: 10px;
+    width: 20%;
+    background-color: rgb(60, 60, 236);
+    color: white;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.footer{
+    text-align: center;
+    margin: 30px 0px;
+}
+
+
+.footer img{
+    margin: -7px 8px;
+}
+
+.footer .sp1{
+   
+    margin-right: 20px;
+}
+
+
+.footer .copy{
+    margin-top: 20px;
+    color: #505050;
+}
+
+
+/* media  */
+
+
+@media only screen and (max-width:900px) {
+
+    .landing .img {
+        width: 98%;
+       
+      
+    }
+    .landing .img img{
+     width: 95%;
+     
+    }
+    
+    .text{
+        width: 100%;
+        
+    }
+
+    .text p{
+        width: 100%;
+    }
+
+
+   .text .services{
+        width: 100%;
+    }
+
+    .services .box{
+        display: block;
+        width: 100%;
+    }
+
+    .services .ser-box{
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+
+    .projects .pro-img{
+        width: 100%;
+        text-align: center;
+    }
+
+    .projects .pro-img img{
+        width: 25%;
+    }
+
+    .projects .pro-img img:nth-child(5),
+    .projects .pro-img img:nth-child(6){
+        height: 50px;
+    }
+
+
+    .contact form{
+        width: 100%;
+    }
+
+    .contact form input{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .contact form input.submit{
+        width:125px;
+    }
+
+
+    .footer{
+        width: 100%;
+    }
+
+    .footer span{
+  font-size: 9px;
+        
+    }
+    /* .footer span:nth-child(2){
+        margin-top: 40px;
+    } */
+}
